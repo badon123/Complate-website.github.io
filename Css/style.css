@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-rendering: optimizeLegibility;
+}
+ul li{
+    list-style-type: none;
+}
+h1{
+    color: white;
+    font-size: 4.2rem;
+}
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+.row{
+    text-align: center;
+    overflow: hidden;
+    width: 75%;
+    margin-left: 14%
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+section{
+    padding: 8rem 0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+header{
+background: linear-gradient(#b980ce,#87509c), url(bg/b.png);
+    height: 85vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/** logo part**/
+.logo{
+    color: white;
+    font-size: 5rem;
+    
+}
+.logo-part{
+    text-decoration: none;
+    margin-top: 3.5rem;
+    float: left;
+}
+/**logo part**/
+.main-nav{
+    float: right;
+    margin-top: 4rem;
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li{
+    display: inline-block;
+   
+    margin-left: 1.5rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform:uppercase ;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 0.5rem;
+    display: inline-block;
+    transition: .5s;
+    font-size: 1.6rem;
+
+}
+
+.main-nav li:hover a{
+background:gray;
+}
+.active{
+    background: gray;
+}
+.hero-text-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    color:rgb(235, 226, 235);
+    background-color: rgb(96, 202, 25);
+    border: 0.3rem solid rgb(65, 218, 91);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
+.btn-hero:link,
+.btn-hero:visited{
+    background-color: #eb7d4b;
+}
+.services{
+    text-align: center;
+    color:white;
+    background:turquoise ;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+h2::after{
+    content: "";
+    display: table;
+    height: .4rem;
+    width: 8.5rem;
+    background: rgb(240, 223, 125);
+    margin: auto;
+    margin-top: 2rem;
+}
+.little{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 2.3rem;
+}
+.services-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+h3{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box{
+    padding: 1%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.team-member{
+    width: 10rem;
+    height: 10rem;
+}
+.team{
+    background:linear-gradient(rgba(255, 255, 0, 0.829),rgba(0, 128, 0, 0.918)),url(../back/green.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.mainp{
+    font-size: 1.6rem;
+}
+span{
+    color:#9edbf1;
+    font-size:1.6rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: .6rem;
+    display: inline-block;
+}
+.team .box p{
+    color:greenyellow;
+}
+.social{
+margin-top: 4rem;
+}
+.social ul li{
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.social ul li a{
+    color:rgb(153, 184, 81);
+}
+.social ul li a i::before{
+    background-color: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: .8s;
+}
+.social ul li a:hover i::before{
+    background-color: aqua;
+    transform: rotate(360deg);
+}
+.skill{
+    background: linear-gradient(rgba(255, 255, 0, 0.479),rgba(255, 192, 203, 0.418)), url(../img/badon.JPG);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.skill .box{
+    margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+stroke-width: 7;
+}
+svg.radial-progress text{
+    fill:black;
+font-size: 1.5rem;
+}
+svg.web-design circle{
+    stroke:#30bae7;
+}
+svg.html circle{
+    stroke:#d74680
+}
+
+svg.grapich circle{
+    stroke:#15c7a8;
+}
+
+svg.ux circle{
+    stroke:#eb7d4b;
+}
+.portfolio{
+    background:linear-gradient(#ffdd99d5,#f8ff99cb),url(../img/full_40419.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+.portfolio-filter{
+    margin: 4.5rem 0;
+}
+.portfolio-filter button{
+    background-color: #ebc985;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    margin: 0 .5rem;
+    transition: .5s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: 0 .5rem .5rem rgba(136, 163, 82, 0.973);
+}
+.portfolio-image{
+    width: 100%;
+    height: auto;
+}.portfolio .col:nth-child(3){
+margin-left: 0;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem
+}
+.btn2{
+    
+    color:rgb(235, 226, 235);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    background-color: #17c2a4;
+    border-color: #14a58c;
+}
+.portfolio .mixitup-control-active{
+    background:rgb(235, 226, 235);
+}
+.client-photo{
+    width: 10rem;
+    float: left;
+}
+.client-review{
+    width: 26rem;
+    float: left;
+}
+.client-review p{
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.client-review .role{
+    color:#ffdd99;
+}
+.client-photo img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.testimonial{
+    background:linear-gradient(#d74680d2,#eb679bc4), url(../img/photo-1471879832106-c7ab9e0cee23.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+.testimonial .col:nth-child(3){
+    margin-left: 0;
+}
+.testimonial .col:nth-child(1),
+.testimonial .col:nth-child(2){
+    margin-top: 4rem;
+}
+.testimonial .col:nth-child(3),
+.testimonial .col:nth-child(4){
+    margin-top:8rem;
+}
+.contact{
+    background:linear-gradient(#6b8ae6,#3c5499);
+    text-align: center;
+}
+.contact form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.contact h2{
+    color:white;
+}
+.contact .little{
+    color: white;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea{
+    background: #273a71;
+    border:.2rem solid palevioletred;
+    width:100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color:white;
+    margin: .5rem 0;
+}
+.contact form ::placeholder{
+    color:whitesmoke;
+    opacity: 1;
+}
+.btn-submit{
+    border:0;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+}
+.btn-submit:hover{
+    cursor: pointer;
+}
+.foot{
+    background: #344b8e;
+    padding: 3rem 0;
+    text-align: center;
+    border: .3rem solid rgba(44, 181, 235, 0.753);
+}
+.foot ul li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.foot ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+.foot ul li a:hover{
+    color:#30bae7;
+    cursor: pointer;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 9rem;
+    background: #87509c;
+    z-index: 9999;
+}
+.sticky.extra{
+    margin-top: 0;
+}
+.sticky.main-nav{
+    margin-top: 0;
+}
+.mobile-menu span{
+    color:#fff;
+    font-size: 4rem;
+    float: right;
+    margin-top: 2rem;
+    display: none;
+}
+.mobile-menu span:hover{
+    cursor: pointer;
+}
